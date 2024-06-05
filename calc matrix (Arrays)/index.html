@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calc matrix (Arrays)/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Матричный калькулятор</title>
+</head>
+<body>
+    <header>
+        <h1>Действия над матрицами</h1>
+    </header>
+
+    <aside class="navigation-container">
+        <div class="active-window navigation-elemenet">Смена знака матрицы</div>
+        <div class="navigation-elemenet">Умножение матрицы на число</div>
+        <div class="navigation-elemenet">Транспонирование матрицы</div>
+        <div class="navigation-elemenet">Сумма матриц</div>
+        <div class="navigation-elemenet">Разность матриц</div>
+    </aside>
+    
+    <main>
+        <div class="active-window calc-container">
+            <h3>Смена знака матрицы</h3>
+
+            <button id="reset-button-1">Отмена</button>
+
+            <div class="set-size-container">
+                <p>Задайте размер для матрицы:</p>
+
+                <label>
+                    Количество строк:
+                    <input id="lines-number-1" type="number" min=0 max=20 placeholder="0">
+                </label>
+
+                <label>
+                    Количество столбцов:
+                    <input id="columns-number-1" type="number" min=0 max=20 placeholder="0">
+                </label>
+
+                <div class="button-set-size-container">
+                    <button id="set-size-button-1">Создать</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="calc-container">
+            <h3>Умножение матрицы на число</h3>
+        </div>
+        
+        <div class="calc-container">
+            <h3>Транспонирование матрицы</h3>
+        </div>
+        
+        <div class="calc-container">
+            <h3>Сумма матриц</h3>
+        </div>
+        
+        <div class="calc-container">
+            <h3>Разность матриц</h3>
+        </div>
+    </main>
+
+    <script src="/calc matrix (Arrays)/main.js"></script>
+</body>
+</html>

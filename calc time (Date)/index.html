@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calc time (Date)/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Калькулятор даты</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="data-input-container">
+            <p>Между какими датами считать?</p>
+            <label>
+                Начальная дата:
+                <input id="input-start" type="date">
+            </label>
+
+            <label>
+                Конечная дата:
+                <input id="input-end" type="date">
+            </label>
+        </div>
+
+        <div class="data-view-container">
+            <span style="font-size: 23px;">Итого: </span><span style="font-size: 27px;" id="data-view">0</span><span style="font-size: 23px;" id="date-info"> дней</span>
+        </div>
+
+        <div class="buttons-container">
+            <button id="button-reset">Сбросить</button>
+            <button id="button-count">Посчитать</button>
+        </div>
+    </div>
+
+    <script src="/calc time (Date)/main.js"></script>
+</body>
+</html>

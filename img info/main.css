@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(230, 252, 252);
+    color: #333;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    position: relative;
+    background-color: #000;
+    background-image: url('/img info/кот.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 20rem;
+    height: 20rem;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 1rem;
+}
+
+.text-container {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.text-container p {
+    color: rgb(230, 252, 252);
+    padding: .1rem .3rem;
+    background-color: #333333a2;
+    
+}
+
+.info-container {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    top: 1rem;
+    left: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #333;
+    box-shadow: 4px 4px 24px -9px rgba(36, 63, 84, 0.2);
+    opacity: 0;
+    transition: .7s;
+    z-index: 1;
+}

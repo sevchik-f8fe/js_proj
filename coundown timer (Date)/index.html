@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/coundown timer (Date)/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Таймер обратного отсчета</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="data-input-container">
+            <p>Сколько времени осталось?</p>
+            <input id="input-days" type="number" min="0" max="99" placeholder="дни">
+            <input id="input-hours" type="number" min="0" max="23" placeholder="часы">
+            <input id="input-minutes" type="number" min="0" max="59" placeholder="минуты">
+            <input id="input-seconds" type="number" min="0" max="59" placeholder="секунды">
+        </div>
+
+        <div class="data-view-container">
+            <span id="data-view">00:00:00:00</span>
+        </div>
+
+        <div class="buttons-container">
+            <button id="button-reset">Сбросить</button>
+            <button id="button-start">Пуск</button>
+        </div>
+    </div>
+
+    <script src="/coundown timer (Date)/main.js"></script>
+</body>
+</html>
